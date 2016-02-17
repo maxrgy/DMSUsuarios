@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="UsuariosDMS"
+                   namespace="UsuariosDMS.Dominio"
+                   default-lazy="false">
+  <class name="Usuario" table="T_usuario">
+    <id name="Codigo" column="username">
+    </id>
+    <property name="Password" column="password" />
+    <property name="Correo" column="correo" />
+    <property name="Nombre" column="nombre" />
+    <property name="Tipo" column="tipo" />
+  </class>
+</hibernate-mapping>
